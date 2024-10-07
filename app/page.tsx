@@ -1,7 +1,7 @@
 import { Header } from "./_components/Header";
 import { Hero } from "./_components/Hero";
 import { Spacing } from "./_components/Spacing";
-import {Status} from "@/app/_components/Status";
+import {Experience} from "@/app/_components/Experience";
 
 export default function Home() {
   return (
@@ -11,9 +11,8 @@ export default function Home() {
       <Spacing size="md" />
       <Hero />
       <Spacing size="md" />
-      <Status />
-
-        <Spacing size="md"/>    
+        <Experience />
+        <Spacing size="md"/>
     </main>
   );
 }

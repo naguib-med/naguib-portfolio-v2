@@ -6,7 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="210ecc4f-c241-41ed-b227-e8c48104c8b8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/_components/Section.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/_components/Section.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/globals.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,16 +39,23 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "hero-section",
+    "git-widget-placeholder": "experience-section",
+    "last_opened_file_path": "D:/portfolio projects/naguib-portfolio-v2/app/_components/images/companies",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "ts.external.directory.path": "D:\\portfolio projects\\naguib-portfolio-v2\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\portfolio projects\naguib-portfolio-v2\app\_components\images\companies" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -61,7 +72,8 @@
       <option name="presentableId" value="Default" />
       <updated>1728249905611</updated>
       <workItem from="1728249909727" duration="241000" />
-      <workItem from="1728291407589" duration="6645000" />
+      <workItem from="1728291407589" duration="7393000" />
+      <workItem from="1728306564482" duration="21559000" />
     </task>
     <servers />
   </component>
