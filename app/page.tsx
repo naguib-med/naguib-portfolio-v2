@@ -1,12 +1,15 @@
 import { Header } from "./_components/Header";
+import { Hero } from "./_components/Hero";
+import { Spacing } from "./_components/Spacing";
 
 export default function Home() {
   return (
-    <div>
-      <main>
-        {/* Header */}
-        <Header />
-      </main>
-    </div>
+    <main>
+      {/* Header */}
+      <Header />
+      <Spacing size="md" />
+      <Hero />
+      <Spacing size="md" />
+    </main>
   );
 }
