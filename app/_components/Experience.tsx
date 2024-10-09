@@ -4,6 +4,7 @@ import Image, { StaticImageData } from "next/image";
 import bifora from "./images/company/bifora.jpg";
 import "react-vertical-timeline-component/style.min.css";
 import React from "react";
+import saba_logo from "./images/company/saba_logo.jpg";
 
 interface ExperienceCardProps {
     title: string;
@@ -49,12 +50,12 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ title, company, type, d
 
 const experiences = [
     {
-        title: "Software Developer",
-        company: "Company",
-        type: "Internship",
-        date: "2021 - Present",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        icon: bifora
+        title: "Multi-skilled employee",
+        company: "Saba Africa Bank",
+        type: "CDI",
+        date: "April 2020 - August 2020",
+        description: "Frontend development of a web application for the management of the bank's financial products.",
+        icon: saba_logo
     },
     {
         title: "Full Stack Developer React/Node.js",
