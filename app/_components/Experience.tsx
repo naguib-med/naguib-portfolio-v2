@@ -1,6 +1,7 @@
 "use client";
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 import Image, { StaticImageData } from "next/image";
+import { Section } from "./Section";
 import bifora from "./images/company/bifora.jpg";
 import "react-vertical-timeline-component/style.min.css";
 import React from "react";
@@ -77,7 +78,7 @@ const experiences = [
 
 export const Experience: React.FC = () => {
     return (
-        <section className="flex flex-col items-center">
+        <Section className="flex flex-col items-center justify-center">
             <p className="text-primary font-caption">What I have done so far</p>
             <h2 className="text-5xl font-bold font-caption text-primary">Work Experience.</h2>
 
@@ -88,6 +89,6 @@ export const Experience: React.FC = () => {
                     ))}
                 </VerticalTimeline>
             </div>
-        </section>
+        </Section>
     );
 };

@@ -28,7 +28,6 @@ const Code = ({ className, ...props }: ComponentPropsWithoutRef<"code">) => {
 export const Hero = () => {
   return (
       <Section className="relative flex max-md:flex-col items-start gap-8 md:flex-row md:items-center ">
-        {/* Animated decorative elements */}
         <motion.div
             className="absolute top-10 left-10 w-24 h-24 bg-[hsl(var(--primary))] opacity-30 rounded-full"
             animate={{ y: [0, -20, 0], scale: [1, 1.2, 1] }}
@@ -40,7 +39,6 @@ export const Hero = () => {
             transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
         />
 
-        {/* Text and Image Section */}
         <div className="flex-[2] flex flex-col gap-4 z-10">
           <motion.h2
               initial={{ opacity: 0, x: -50 }}
@@ -113,7 +111,6 @@ export const Hero = () => {
           </motion.p>
         </div>
 
-        {/* Profile Image */}
         <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
