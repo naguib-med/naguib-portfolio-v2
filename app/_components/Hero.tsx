@@ -54,7 +54,7 @@ export const Hero = () => {
               transition={{ duration: 1.2 }}
               className="text-3xl font-caption"
           >
-            Software Engineer
+            React/Java fullstack developer
           </motion.h3>
           <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -62,7 +62,7 @@ export const Hero = () => {
               transition={{ duration: 1.4 }}
               className="text-base"
           >
-            I'm a software engineer junior based in{" "}
+            I'm a React/Java fullstack developer junior based in{" "}
             <Code className="inline-flex items-center">
               <Image src={france} alt="France flag" width={16} height={16} />
               France

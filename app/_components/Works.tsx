@@ -73,7 +73,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ index, name, description, tag
 
                         {/* Glowing Particle Effect */}
                         <div className="absolute inset-0 flex justify-center items-center pointer-events-none">
-                            <div className="w-8 h-8 bg-white rounded-full opacity-0 group-hover:opacity-100 animate-ping"></div>
+                            <div className="w-2 h-2 bg-white rounded-full opacity-0 group-hover:opacity-100 animate-ping"></div>
                         </div>
 
                         <button

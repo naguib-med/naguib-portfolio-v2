@@ -9,6 +9,7 @@ import { GraphQLIcon } from "./icons/GraphQLIcon";
 import { motion } from "framer-motion";
 import styled from "@emotion/styled";
 import React from "react";
+import {SpringIcon} from "@/app/_components/icons/SpringIcon";
 
 const ParticleBackground = styled.div`
     position: absolute;
@@ -34,8 +35,8 @@ const skills = [
     { name: "React", icon: <ReactIcon className="inline" size={50} /> },
     { name: "TypeScript", icon: <TypeScriptIcon className="inline" size={50} /> },
     { name: "Tailwind CSS", icon: <TailwindIcon className="inline" size={50} /> },
+    { name: "Spring Boot (Java)", icon: <SpringIcon className="inline" size={50} /> },
     { name: "Next.js", icon: <NextJSIcon className="inline" size={50} /> },
-    { name: "GraphQL", icon: <GraphQLIcon className="inline" size={50} /> },
 ];
 
 export const Tech = () => {
