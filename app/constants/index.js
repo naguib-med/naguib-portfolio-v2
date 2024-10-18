@@ -1,70 +1,120 @@
-const projects = [
+import cookChef from "../_components/images/cookchef.png";
+import myposter from "../_components/images/myposter.png";
+import saba_logo from "../_components/images/company/saba_logo.jpg";
+import bifora from "../_components/images/company/bifora.jpg";
+import posterEditor from "../_components/images/poster_editor.png";
+
+const experiences = [
     {
-        name: "Car Rent",
-        description:
-            "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-        tags: [
-            {
-                name: "react",
-                color: "#61dafb",
-            },
-            {
-                name: "mongodb",
-                color: "#4DB33D",
-            },
-            {
-                name: "tailwind",
-                color: "#38B2AC",
-            },
-        ],
-        image: "https://images.unsplash.com/photo-1607799279861-4dd421887fb3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        source_code_link: "https://github.com/",
-        live_link: "https://www.google.com",
+        title: "Developer Backend Java",
+        company: "Saba Africa Bank",
+        type: "CDI",
+        date: "April 2020 - August 2020",
+        description: "Back-end development of a web application for managing the bank's internal processes.",
+        icon: saba_logo
     },
     {
-        name: "Job IT",
-        description:
-            "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-        tags: [
-            {
-                name: "react",
-                color: "#61dafb",
-            },
-            {
-                name: "restapi",
-                color: "#f06529",
-            },
-            {
-                name: "scss",
-                color: "#CC6699",
-            },
-        ],
-        image: "https://images.unsplash.com/photo-1485856407642-7f9ba0268b51?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        source_code_link: "https://github.com/",
-        live_link: "https://www.google.com",
+        title: "Full Stack Developer React/Node.js",
+        company: "Bifora Data Consulting",
+        type: "Internship",
+        date: "2023 - 2023",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        icon: bifora
     },
     {
-        name: "Trip Guide",
-        description:
-            "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-        tags: [
-            {
-                name: "nextjs",
-                color: "#C4302B",
-            },
-            {
-                name: "supabase",
-                color: "#3ECF8E",
-            },
-            {
-                name: "css",
-                color: "#264de4",
-            },
-        ],
-        image: "https://images.unsplash.com/photo-1619410283995-43d9134e7656?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        source_code_link: "https://github.com/",
-        live_link: "https://www.google.com",
+        title: "Full Stack Developer React/Node.js",
+        company: "Bifora Data Consulting",
+        type: "Work-study",
+        date: "2023 - 2024",
+        description: "Développement d'une application web de gestion de Comptes Rendus d'Activités (CRA) pour les consultants de l'entreprise.",
+        icon: bifora
     },
 ];
 
-export { projects };
+
+const projects = [
+    {
+      name: "Poster editor",
+        description:
+            "A web application for creating posters. Users can add text, images, shapes, and change the color of the text and shapes.",
+        tags: [
+            {
+                name: "Vite + Vue",
+                color: "#42b883",
+            },
+            {
+                name: "Fabric.js",
+                color: "#FF6138",
+            },
+            {
+                name: "Pinia",
+                color: "#42b883",
+            },
+            {
+                name: "Vuetify3",
+                color: "#4f9ff6",
+            },
+        ],
+        image: posterEditor,
+        source_code_link: "https://github.com/naguib-med/demo-fabricjs",
+        live_link: "https://demo-fabricjs.vercel.app/",
+    },
+    {
+        name: "Cook Chef",
+        description:
+            "A web-based recipe management application. Users can search for recipes, consult them, add them to their favorites and remove them from their favorites.",
+        tags: [
+            {
+                name: "react",
+                color: "#61dafb",
+            },
+            {
+                name: "Yup",
+                color: "#FF69B4",
+            },
+            {
+                name: "React-hook-form",
+                color: "#61DAFB",
+            },
+            {
+                name: "Sass",
+                color: "#CC6699",
+            },
+        ],
+        image: cookChef,
+        source_code_link: "https://github.com/naguib-med/cookchefapp",
+        live_link: "https://cookchefapp.vercel.app/",
+    },
+    {
+        name: "Poster management",
+        description:
+            "A web application for managing posters. Users can add, edit, delete, consult posters and generate a PDF file containing the list of posters.",
+        tags: [
+            {
+                name: "vue",
+                color: "#42b883",
+            },
+            {
+                name: "Firebase",
+                color: "#FFA611",
+            },
+            {
+                name: "Fabric.js",
+                color: "#FF6138",
+            },
+            {
+                name: "Pinia",
+                color: "#42b883",
+            },
+            {
+                name: "Vuetify3",
+                color: "#4f9ff6",
+            }
+        ],
+        image: myposter,
+        source_code_link: "https://github.com/naguib-med/creation-posters",
+        live_link: "https://posters-app-3eb45.web.app/",
+    }
+];
+
+export { projects, experiences };

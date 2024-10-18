@@ -2,10 +2,10 @@
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 import Image, { StaticImageData } from "next/image";
 import { Section } from "./Section";
-import bifora from "./images/company/bifora.jpg";
 import "react-vertical-timeline-component/style.min.css";
 import React from "react";
-import saba_logo from "./images/company/saba_logo.jpg";
+import { motion } from "framer-motion";
+import { experiences } from "@/app/constants";
 
 interface ExperienceCardProps {
     title: string;
@@ -19,73 +19,52 @@ interface ExperienceCardProps {
 const ExperienceCard: React.FC<ExperienceCardProps> = ({ title, company, type, date, description, icon }) => {
     return (
         <VerticalTimelineElement
+            className="vertical-timeline-element--work"
             visible
             contentStyle={{
-                background: "linear-gradient(135deg, #1d1836 0%, #3c3b4d 100%)",
-                color: "#fff"
+                background: "linear-gradient(135deg, rgba(29,24,54,0.8) 0%, rgba(60,59,77,0.8) 100%)",
+                color: "#fff",
+                borderRadius: "12px",
+                boxShadow: "0 4px 14px rgba(0,0,0,0.2)",
             }}
-            contentArrowStyle={{ borderRight: "7px solid #fff" }}
+            contentArrowStyle={{ borderRight: "7px solid rgba(255,255,255,0.8)" }}
             date={date}
-            iconStyle={{ background: "#fff", color: "#fff" }}
+            iconStyle={{ background: "#fff", color: "#fff", boxShadow: "0 4px 14px rgba(0,0,0,0.1)" }}
             icon={
-                <div className="relative group">
+                <motion.div whileHover={{ scale: 1.1, rotate: 10 }}>
                     <Image
                         width={100}
                         height={100}
                         src={icon}
                         alt={`${company} logo`}
                         className="rounded-full transition-transform duration-300 group-hover:scale-110 group-hover:shadow-xl"
+                        loading="lazy" // Lazy load the icon images
                     />
-                </div>
+                </motion.div>
             }
         >
-            <h3 className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600">
+            <h3 className="vertical-timeline-element-title text-xl font-bold">
                 {title}
             </h3>
-            <p className="text-sm font-bold">{type}</p>
-            <h4 className="text-lg font-bold">{company}</h4>
-            <p className="text-base">{description}</p>
+            <p className="text-sm font-semibold text-secondary-foreground">{type}</p>
+            <h4 className="vertical-timeline-element-subtitle text-lg">{company}</h4>
+            <p className="text-base leading-relaxed text-muted-foreground">{description}</p>
         </VerticalTimelineElement>
     );
 };
 
-const experiences = [
-    {
-        title: "Multi-skilled employee",
-        company: "Saba Africa Bank",
-        type: "CDI",
-        date: "April 2020 - August 2020",
-        description: "Frontend development of a web application for the management of the bank's financial products.",
-        icon: saba_logo
-    },
-    {
-        title: "Full Stack Developer React/Node.js",
-        company: "Bifora Data Consulting",
-        type: "Internship",
-        date: "2023 - 2023",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        icon: bifora
-    },
-    {
-        title: "Full Stack Developer React/Node.js",
-        company: "Bifora Data Consulting",
-        type: "Work-study",
-        date: "2023 - 2024",
-        description: "Développement d'une application web de gestion de Comptes Rendus d'Activités (CRA) pour les consultants de l'entreprise.",
-        icon: bifora
-    },
-];
-
-export const Experience: React.FC = () => {
+export default function Experience() {
     return (
         <Section className="flex flex-col items-center justify-center">
             <p className="text-primary font-caption">What I have done so far</p>
-            <h2 className="text-5xl font-bold font-caption text-primary">Work Experience.</h2>
+            <h2 className="text-5xl font-bold font-caption text-primary">
+                Work Experience.
+            </h2>
 
             <div className="mt-20 w-full">
                 <VerticalTimeline layout="2-columns">
                     {experiences.map((experience, index) => (
-                        <ExperienceCard key={index} {...experience} />
+                        <ExperienceCard {...experience} key={index} />
                     ))}
                 </VerticalTimeline>
             </div>

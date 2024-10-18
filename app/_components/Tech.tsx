@@ -5,11 +5,13 @@ import { TailwindIcon } from "./icons/TailwindIcon";
 import { ReactIcon } from "./icons/ReactIcon";
 import { TypeScriptIcon } from "./icons/TypeScriptIcon";
 import { NextJSIcon } from "./icons/NextJSIcon";
-import { GraphQLIcon } from "./icons/GraphQLIcon";
 import { motion } from "framer-motion";
 import styled from "@emotion/styled";
 import React from "react";
 import {SpringIcon} from "@/app/_components/icons/SpringIcon";
+import {NodeIcon} from "@/app/_components/icons/NodeIcon";
+import {MongoIcon} from "@/app/_components/icons/MongoIcon";
+import {PostgresIcon} from "@/app/_components/icons/PostgresIcon";
 
 const ParticleBackground = styled.div`
     position: absolute;
@@ -35,11 +37,14 @@ const skills = [
     { name: "React", icon: <ReactIcon className="inline" size={50} /> },
     { name: "TypeScript", icon: <TypeScriptIcon className="inline" size={50} /> },
     { name: "Tailwind CSS", icon: <TailwindIcon className="inline" size={50} /> },
+    { name: "Node.js", icon: <NodeIcon className="inline" size={50} /> },
     { name: "Spring Boot (Java)", icon: <SpringIcon className="inline" size={50} /> },
     { name: "Next.js", icon: <NextJSIcon className="inline" size={50} /> },
+    { name: "MongoDB", icon: <MongoIcon className="inline" size={50} /> },
+    { name: "PostgreSQL", icon: <PostgresIcon className="inline" size={50} /> },
 ];
 
-export const Tech = () => {
+export default function Tech() {
     return (
         <Section
             className="relative flex flex-col items-center py-20 bg-gradient-to-br from-[hsl(var(--background))] to-[hsl(var(--popover))] overflow-hidden">
@@ -95,4 +100,4 @@ export const Tech = () => {
 );
 };
 
-export default Tech;
+

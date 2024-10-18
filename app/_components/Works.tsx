@@ -4,7 +4,7 @@ import { Section } from "./Section";
 import {fadeIn} from "@/app/helpers/motion";
 import {projects} from "@/app/constants";
 import {Tilt} from "react-tilt";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import {GithubIcon} from "@/app/_components/icons/GithubIcon";
 import { Globe } from "lucide-react";
 import React from "react";
@@ -14,7 +14,7 @@ interface ProjectCardProps {
     name: string;
     description: string;
     tags: { name: string; color: string }[];
-    image: string;
+    image: string | StaticImageData;
     source_code_link: string;
     live_link: string;
 }
@@ -50,9 +50,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ index, name, description, tag
                 </div>
 
                 <div className='mt-5'>
-                    <h3 className="text-2xl font-bold text-white mt-5">{name}</h3>
+                    <h3 className="text-2xl font-bold text-white mt-5 overflow-hidden line-clamp-2">{name}</h3>
                     <p className="text-primary mt-2 h-[100px] overflow-hidden line-clamp-5">{description}</p>
-                    <div className="flex mt-5">
+                    <div className="flex flex-wrap mt-5">
                         {tags.map((tag, index) => (
                             <span key={index}
                                   className="px-2 py-1 rounded-md text-sm mr-2"
@@ -81,7 +81,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ index, name, description, tag
                             className="relative z-10 w-full py-3 text-lg font-semibold text-white bg-black bg-opacity-50 rounded-lg shadow-lg transform transition-transform duration-500 ease-in-out flex items-center justify-center gap-3 hover:bg-opacity-75"
                         >
                             <Globe className="text-white" size={24} />
-                            <span className="tracking-wide">Explore Live Project</span>
+                            <span className="tracking-wide">
+                                Explore Live Project
+                            </span>
                         </button>
                     </motion.div>
                 </div>
@@ -90,7 +92,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ index, name, description, tag
     );
 };
 
-export const Works = () => {
+export default function Works() {
     return (
         <Section className="flex flex-col items-center">
             <p className="text-primary font-caption">
