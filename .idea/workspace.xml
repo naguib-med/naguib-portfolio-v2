@@ -5,14 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="210ecc4f-c241-41ed-b227-e8c48104c8b8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/_components/Experience.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/_components/Experience.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/_components/Hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/_components/Hero.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/constants/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/constants/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +15,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JavaScript File" />
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -41,8 +36,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "tech-section",
-    "last_opened_file_path": "D:/portfolio projects/naguib-portfolio-v2/app/_components/images",
+    "git-widget-placeholder": "contact-section",
+    "last_opened_file_path": "D:/portfolio projects/naguib-portfolio-v2/public/locales/fr",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -57,10 +52,16 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\portfolio projects\naguib-portfolio-v2\public\locales\fr" />
+      <recent name="D:\portfolio projects\naguib-portfolio-v2\app\_components\images\education" />
+      <recent name="D:\portfolio projects\naguib-portfolio-v2\app\_components\images\company" />
       <recent name="D:\portfolio projects\naguib-portfolio-v2\app\_components\images" />
       <recent name="D:\portfolio projects\naguib-portfolio-v2\app\_components\images\companies" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\portfolio projects\naguib-portfolio-v2\app\_components\images\education" />
+      <recent name="D:\portfolio projects\naguib-portfolio-v2\app\pages" />
+      <recent name="D:\portfolio projects\naguib-portfolio-v2\app\_components\images" />
       <recent name="D:\portfolio projects\naguib-portfolio-v2\app\_components\images\company" />
     </key>
   </component>
@@ -83,6 +84,9 @@
       <workItem from="1728291407589" duration="7393000" />
       <workItem from="1728306564482" duration="29818000" />
       <workItem from="1728451969999" duration="5055000" />
+      <workItem from="1728648278669" duration="1127000" />
+      <workItem from="1729074580964" duration="46824000" />
+      <workItem from="1729499674675" duration="16727000" />
     </task>
     <servers />
   </component>
@@ -103,6 +107,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added Hero and Spacing component and icons" />
     <MESSAGE value="added Hero and Spacing component and icons" />
-    <option name="LAST_COMMIT_MESSAGE" value="added Hero and Spacing component and icons" />
+    <MESSAGE value="feat: added contact section" />
+    <MESSAGE value="feat: added contact section" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: added contact section" />
   </component>
 </project>

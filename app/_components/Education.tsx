@@ -5,19 +5,17 @@ import { Section } from "./Section";
 import "react-vertical-timeline-component/style.min.css";
 import React from "react";
 import { motion } from "framer-motion";
-import { experiences } from "@/app/constants";
+import { educations } from "@/app/constants";
 
-interface ExperienceCardProps {
-    title: string;
-    company: string;
-    type: string;
+interface EducationCardProps {
+    degree: string;
+    school: string;
     date: string;
     description: string[];
     icon: string | StaticImageData;
-    languages?: string[];
 }
 
-const ExperienceCard: React.FC<ExperienceCardProps> = ({ title, company, type, date, description, icon, languages }) => {
+const EducationCard: React.FC<EducationCardProps> = ({ degree, school, date, description, icon }) => {
     return (
         <VerticalTimelineElement
             visible
@@ -27,16 +25,16 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ title, company, type, d
                 borderRadius: "12px",
                 boxShadow: "0 4px 14px rgba(0,0,0,0.2)",
             }}
-            contentArrowStyle={{borderRight: "7px solid rgba(255,255,255,0.8)"}}
+            contentArrowStyle={{ borderRight: "7px solid rgba(255,255,255,0.8)" }}
             date={date}
-            iconStyle={{background: "#fff", color: "#fff", boxShadow: "0 4px 14px rgba(0,0,0,0.1)"}}
+            iconStyle={{ background: "#fff", color: "#fff", boxShadow: "0 4px 14px rgba(0,0,0,0.1)" }}
             icon={
-                <motion.div whileHover={{scale: 1.1, rotate: 10}}>
+                <motion.div whileHover={{ scale: 1.1, rotate: 10 }}>
                     <Image
                         width={100}
                         height={100}
                         src={icon}
-                        alt={`${company} logo`}
+                        alt={`${school} logo`}
                         className="rounded-full transition-transform duration-300 group-hover:scale-110 group-hover:shadow-xl"
                         loading="lazy"
                     />
@@ -44,10 +42,9 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ title, company, type, d
             }
         >
             <h3 className="vertical-timeline-element-title text-xl font-bold">
-                {title}
+                {degree}
             </h3>
-            <p className="text-sm font-semibold text-secondary-foreground">{type}</p>
-            <h4 className="vertical-timeline-element-subtitle text-lg">{company}</h4>
+            <h4 className="vertical-timeline-element-subtitle text-lg">{school}</h4>
             <div className="text-sm mt-3">
                 <ul className="list-disc pl-5">
                     {description.map((desc, index) => (
@@ -55,36 +52,22 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ title, company, type, d
                     ))}
                 </ul>
             </div>
-            <div className="mt-5">
-                {languages && (
-                    <div className="flex flex-wrap mt-5 gap-y-2">
-                        {languages.map((language, index) => (
-                            <span
-                                key={index}
-                                className="px-2 py-1 rounded-md text-sm mr-2 bg-primary-foreground"
-                            >
-                                {language}
-                            </span>
-                        ))}
-                    </div>
-                )}
-            </div>
         </VerticalTimelineElement>
     );
 };
 
-export default function Experience() {
+export default function Education() {
     return (
         <Section className="flex flex-col items-center justify-center">
-            <p className="text-primary font-caption">Ce que j'ai fait jusqu'à présent</p>
+            <p className="text-primary font-caption">Ce que j'ai appris</p>
             <h2 className="text-5xl font-bold font-caption text-primary">
-                Expériences professionnel
+                Éducation
             </h2>
 
             <div className="mt-20 w-full">
                 <VerticalTimeline layout="2-columns">
-                    {experiences.map((experience, index) => (
-                        <ExperienceCard {...experience} key={index} />
+                    {educations.map((education, index) => (
+                        <EducationCard {...education} key={index} />
                     ))}
                 </VerticalTimeline>
             </div>
