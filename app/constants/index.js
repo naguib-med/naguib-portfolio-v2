@@ -41,7 +41,7 @@ const experiences = [
         title: "Backend Java Developer",
         company: "Saba Africa Bank",
         type: "Permanent contract (CDI)",
-        date: "Apr. 2021 - Aug. 2021",
+        date: "Mar. 2021 - Aug. 2021",
         description: [
             "Implemented a service for balance inquiry and transaction history display.",
             "Developed an online bank check request feature."
