@@ -59,7 +59,7 @@ const EducationCard: React.FC<EducationCardProps> = ({ degree, school, date, des
 export default function Education() {
     return (
         <Section className="flex flex-col items-center justify-center">
-            <p className="text-primary font-caption">Ce que j'ai appris</p>
+            <p className="text-primary font-caption">Ce que j&apos;ai appris</p>
             <h2 className="text-5xl font-bold font-caption text-primary">
                 Éducation
             </h2>

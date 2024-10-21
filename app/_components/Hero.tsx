@@ -129,7 +129,7 @@ export default function Hero() {
                     className="text-lg md:text-xl mt-2 font-light leading-relaxed text-[hsl(var(--primary))]"
                 >
           <span className="block mb-2 text-2xl md:text-3xl font-semibold text-[hsl(var(--primary))]">
-            🚀 À la recherche d'un{" "}
+            🚀 À la recherche d&apos;un{" "}
               <span className="text-[hsl(var(--violet))]">
               poste de développeur full-stack
             </span>
@@ -139,7 +139,7 @@ export default function Hero() {
                         <span className="font-medium text-[hsl(var(--violet))]">évoluer</span>, apprendre de nouvelles technologies et avoir un impact positif 🌍.
           </span>
                     <span className="block mt-2 font-medium text-[hsl(var(--accent-foreground))]">
-            Construisons quelque chose d'incroyable{" "}
+            Construisons quelque chose d&apos;incroyable{" "}
                         <span className="underline hover:text-[hsl(var(--primary))] transition-colors">
               ensemble !
             </span>{" "}

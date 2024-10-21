@@ -76,7 +76,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ title, company, type, d
 export default function Experience() {
     return (
         <Section className="flex flex-col items-center justify-center">
-            <p className="text-primary font-caption">Ce que j'ai fait jusqu'à présent</p>
+            <p className="text-primary font-caption">Ce que j&apos;ai fait jusqu&apos;à présent</p>
             <h2 className="text-5xl font-bold font-caption text-primary">
                 Expériences professionnel
             </h2>
