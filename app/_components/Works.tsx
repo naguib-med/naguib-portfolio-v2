@@ -96,7 +96,7 @@ export default function Works() {
     return (
         <Section className="flex flex-col items-center">
             <p className="text-primary font-caption">
-                Quelques projets que j'ai réalisés
+                Quelques projets que j&apos;ai réalisés
             </p>
             <h2 className="text-5xl font-bold font-caption text-primary">
                 Portfolio
@@ -104,8 +104,8 @@ export default function Works() {
             <div className="w-full flex flex-col items-center justify-center mt-4">
                 <motion.p variants={fadeIn("", "", 0.1, 1)}
                           className="mt-3 text-primary text-[17px] max-w-3xl leading-[30px] text-center justify-center">
-                    Quelques projets sur lesquels j'ai travaillé. J'ai travaillé sur une variété de projets d'applications web.
-                    J'ai de l'expérience avec une variété de technologies et je suis toujours à la recherche d'en apprendre davantage.
+                    Quelques projets sur lesquels j&apos;ai travaillé. J&apos;ai travaillé sur une variété de projets d&apos;applications web.
+                    J&apos;ai de l&apos;expérience avec une variété de technologies et je suis toujours à la recherche d&apos;en apprendre davantage.
                 </motion.p>
             </div>
 
