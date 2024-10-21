@@ -11,6 +11,8 @@ import { TypeScriptIcon } from "./icons/TypeScriptIcon";
 import { NextJSIcon } from "./icons/NextJSIcon";
 import { GraphQLIcon } from "./icons/GraphQLIcon";
 import { motion } from "framer-motion";
+import {SpringIcon} from "@/app/_components/icons/SpringIcon";
+import {NodeIcon} from "@/app/_components/icons/NodeIcon";
 
 const Code = ({ className, ...props }: ComponentPropsWithoutRef<"code">) => {
   return (
@@ -47,7 +49,7 @@ export default function Hero() {
                   transition={{duration: 1}}
                   className="text-5xl font-bold font-caption text-primary"
               >
-                  Hi, I'm Naguib.
+                  Hi, I&#39;m Naguib.
               </motion.h2>
               <motion.h3
                   initial={{opacity: 0, x: -50}}
@@ -58,14 +60,13 @@ export default function Hero() {
                   React/Java fullstack developer
               </motion.h3>
 
-              {/* Location */}
               <motion.p
                   initial={{opacity: 0, y: 20}}
                   animate={{opacity: 1, y: 0}}
                   transition={{duration: 1.4}}
                   className="text-base"
               >
-                  I'm a React/Java fullstack developer junior based in{" "}
+                  I&#39;m a React/Java fullstack developer junior based in{" "}
                   <Code className="inline-flex items-center">
                       <Image src={france} alt="France flag" width={16} height={16}/>
                       France
@@ -83,7 +84,17 @@ export default function Hero() {
                   , and{" "}
                   <Code className="inline-flex items-center hover:text-[hsl(var(--primary))]">
                       <TailwindIcon className="inline" size={16}/>
-                      Tailwind CSS.
+                      Tailwind CSS
+                  </Code>
+                  , with backend technologies like{" "}
+                  <Code className="inline-flex items-center hover:text-[hsl(var(--primary))]">
+                      <SpringIcon className="inline" size={16}/>
+                      Spring Boot
+                  </Code>{" "}
+                  and{" "}
+                  <Code className="inline-flex items-center my-1 hover:text-[hsl(var(--primary))]">
+                      <NodeIcon className="inline" size={16}/>
+                      Node.js
                   </Code>
               </motion.p>
 
@@ -92,9 +103,9 @@ export default function Hero() {
                   initial={{opacity: 0, y: 20}}
                   animate={{opacity: 1, y: 0}}
                   transition={{duration: 1.6}}
-                  className="text-base mt-4"
+                  className="text-base"
               >
-                  I'm also a{" "}
+                  I&#39;m also a{" "}
                   <Code className="hover:text-[hsl(var(--primary))]">
                       self-taught
                   </Code>{" "}
@@ -115,7 +126,7 @@ export default function Hero() {
                   initial={{opacity: 0, y: 20}}
                   animate={{opacity: 1, y: 0}}
                   transition={{duration: 1.8}}
-                  className="text-lg md:text-xl mt-4 font-light leading-relaxed text-[hsl(var(--primary))]"
+                  className="text-lg md:text-xl mt-2 font-light leading-relaxed text-[hsl(var(--primary))]"
               >
   <span className="block mb-2 text-2xl md:text-3xl font-semibold text-[hsl(var(--primary))]">
     🚀 Looking for a <span className="text-[hsl(var(--violet))]">
@@ -134,10 +145,10 @@ export default function Hero() {
                   initial={{opacity: 0, y: 20}}
                   animate={{opacity: 1, y: 0}}
                   transition={{duration: 2}}
-                  className="mt-6"
+                  className="mt-4"
               >
                   <a
-                      href="/path-to-your-cv.pdf"
+                      href="/Naguib_CV.pdf"
                       download
                       className="inline-flex items-center px-6 py-3 border border-transparent bg-[hsl(var(--primary))] text-[hsl(var(--primary-foreground))] font-bold rounded-lg hover:bg-[hsl(var(--accent))] hover:text-[hsl(var(--accent-foreground))] transition-all duration-300"
                   >

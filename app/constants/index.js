@@ -6,6 +6,10 @@ import posterEditor from "../_components/images/poster_editor.png";
 import infoexpert from "../_components/images/company/infoexpert-logo.jpg";
 import hopital_peltier from "../_components/images/company/hopital_peltier.jpg";
 
+/* education logo */
+import univ_djibouti from "../_components/images/education/univ_djib.jpg";
+import univ_lyon1 from "../_components/images/education/univ_lyon1logo.png";
+
 const experiences = [
     {
         title: "Vue.js Developer",
@@ -13,9 +17,9 @@ const experiences = [
         type: "Internship",
         date: "Jun. 2020 - Aug. 2020",
         description: [
-            "Participé au développement d'une application web de gestion des patients pour optimiser les processus des infirmiers majors.",
-            "Collaboré à la conception des interfaces utilisateurs et à la gestion des données patients.",
-            "Contribué à la mise en place de fonctionnalités clés et à l'optimisation des flux de travail."
+            "Participated in developing a patient management web application to optimize processes for nurse supervisors.",
+            "Collaborated in designing user interfaces and managing patient data.",
+            "Contributed to implementing key features and optimizing workflows."
         ],
         languages: ["Vue.js", "Node.js", "SCSS", "Vuetify", "MySQL", "Git", "Agile Methodology"],
         icon: hopital_peltier,
@@ -26,22 +30,21 @@ const experiences = [
         type: "Fixed-term contract (CDD)",
         date: "Nov. 2020 - Feb. 2021",
         description: [
-            "Travaillé sur un projet de développement d'une application web de gestion de bibliothèque.",
-            "Mise en place d'un système de suivi des emprunts et retours, avec des notifications automatiques pour les utilisateurs.",
-            "Implémenté des fonctionnalités de recherche et de filtrage pour faciliter la navigation des utilisateurs."
-            
+            "Worked on developing a library management web application.",
+            "Implemented a system to track loans and returns, with automatic notifications for users.",
+            "Implemented search and filter functionalities to facilitate user navigation."
         ],
         languages: ["React.js", "Spring Boot", "MySQL", "Git", "Agile Methodology"],
         icon: infoexpert,
     },
     {
-        title: "Developer Backend Java",
+        title: "Backend Java Developer",
         company: "Saba Africa Bank",
         type: "Permanent contract (CDI)",
         date: "Apr. 2021 - Aug. 2021",
         description: [
-            "Implémentation d'un service de consultation de soldes et d'affichage de l'historique des transactions",
-            "Développement d'une fonctionnalité de demande de chèque bancaire en ligne.",
+            "Implemented a service for balance inquiry and transaction history display.",
+            "Developed an online bank check request feature."
         ],
         languages: ["Java", "Spring Boot", "Spring Security", "Git", "Agile Methodology"],
         icon: saba_logo
@@ -52,10 +55,10 @@ const experiences = [
         type: "Internship",
         date: "Apr. 2023 - Aug. 2023",
         description: [
-            "Développement d'une application web de Compte Rendu d'Activité (CRA) en autonomie",
-            "Participé à la conception de l'architecture et au développement de l'application web de formation en ligne.",
-            "Gestion de projet : planification, suivi et reporting.",
-            "Écriture de scripts et mise en place des processus et techniques de migration de base de données MongoDB",
+            "Developed a web application for Activity Reports (CRA) independently.",
+            "Participated in designing the architecture and developing the online training web application.",
+            "Project management: planning, monitoring, and reporting.",
+            "Wrote scripts and set up processes for migrating MongoDB databases."
         ],
         languages: ["React.js", "Node.js", "Spring Boot", "Spring Security", "PostgreSQL", "MongoDB", "Git", "Agile Methodology", "Docker", "Jira"],
         icon: bifora
@@ -66,19 +69,41 @@ const experiences = [
         type: "Work-study",
         date: "Sep. 2023 - Aug. 2024",
         description: [
-            "Contribué à l'amélioration continue et à la maintenance du site web de l'entreprise.",
-            "Créer des tests unitaires et fonctionnels pour garantir la qualité du code.",
-            "Participé à la migration des programmes SAS vers SparkR dans le cloud Databricks.",
+            "Contributed to continuous improvement and maintenance of the company’s website.",
+            "Created unit and functional tests to ensure code quality.",
+            "Participated in migrating SAS programs to SparkR on the Databricks cloud."
         ],
         languages: ["React.js", "Node.js", "MongoDB", "Git", "Agile Methodology", "Databricks", "SparkR", "SAS"],
         icon: bifora
     },
 ];
 
+const educations = [
+    {
+        degree: "Bachelor of Science in Computer Science",
+        school: "University of Djibouti",
+        date: "Sep. 2017 - Jun. 2020",
+        description: [
+            "Relevant coursework: Data Structures, Algorithms, Web Development, Artificial Intelligence, Computer Networks ...",
+            "Valedictorian of the 2020 class of 201 students."
+        ],
+        icon: univ_djibouti,
+    },
+    {
+        degree: "Master of Information and Web Technologies",
+        school: "University of Claude Bernard Lyon 1",
+        date: "Sep. 2022 - Jun. 2024",
+        description: [
+            "Relevant coursework: Web Development, Web Security, Data Mining, Machine Learning, Big Data, Cloud Computing, Internet of Things ...",
+            "Received with distinction."
+        ],
+        icon: univ_lyon1,
+    }
+];
 
 const projects = [
     {
-      name: "Poster editor",
+        name: "Poster editor",
         description:
             "A web application for creating posters. Users can add text, images, shapes, and change the color of the text and shapes.",
         tags: [
@@ -161,4 +186,4 @@ const projects = [
     }
 ];
 
-export { projects, experiences };
+export { projects, experiences, educations };

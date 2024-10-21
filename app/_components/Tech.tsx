@@ -12,6 +12,7 @@ import {SpringIcon} from "@/app/_components/icons/SpringIcon";
 import {NodeIcon} from "@/app/_components/icons/NodeIcon";
 import {MongoIcon} from "@/app/_components/icons/MongoIcon";
 import {PostgresIcon} from "@/app/_components/icons/PostgresIcon";
+import {MySQLIcon} from "@/app/_components/icons/MySQLIcon";
 
 const ParticleBackground = styled.div`
     position: absolute;
@@ -42,6 +43,7 @@ const skills = [
     { name: "Next.js", icon: <NextJSIcon className="inline" size={50} /> },
     { name: "MongoDB", icon: <MongoIcon className="inline" size={50} /> },
     { name: "PostgreSQL", icon: <PostgresIcon className="inline" size={50} /> },
+    { name: "MySQL", icon: <MySQLIcon className="inline" size={50} /> },
 ];
 
 export default function Tech() {
