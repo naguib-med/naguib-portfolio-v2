@@ -9,10 +9,12 @@ import { XIcon } from "@/app/_components/icons/XIcon";
 export default function Contact() {
     return (
         <Section className="flex flex-col items-center justify-center" id="contact">
-            <h1 className="text-5xl font-extrabold text-primary mb-8 tracking-tight">Let&#39;s Connect</h1>
+            <h1 className="text-5xl font-extrabold text-primary mb-8 tracking-tight">
+                Connectons-nous
+            </h1>
             <div className="space-y-5 text-center text-lg">
                 <p className="text-foreground">
-                    If you would like to get in touch, please send me an email at{" "}
+                    Si vous souhaitez me contacter, veuillez m&apos;envoyer un e-mail à{" "}
                     <a
                         href="mailto:moma.naguib@gmail.com"
                         className={cn(buttonVariants({ variant: "link" }), "text-primary font-semibold hover:underline")}
@@ -21,7 +23,7 @@ export default function Contact() {
                     </a>
                 </p>
                 <p className="text-foreground">
-                    Or you can reach me on:
+                    Ou vous pouvez me joindre sur:
                 </p>
                 <div className="flex space-x-4 justify-center">
                     <a

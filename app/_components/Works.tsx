@@ -82,7 +82,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ index, name, description, tag
                         >
                             <Globe className="text-white" size={24} />
                             <span className="tracking-wide">
-                                Explore Live Project
+                                Voir le site
                             </span>
                         </button>
                     </motion.div>
@@ -96,16 +96,16 @@ export default function Works() {
     return (
         <Section className="flex flex-col items-center">
             <p className="text-primary font-caption">
-                My Works
+                Quelques projets que j'ai réalisés
             </p>
             <h2 className="text-5xl font-bold font-caption text-primary">
-                Projects I've worked.
+                Portfolio
             </h2>
             <div className="w-full flex flex-col items-center justify-center mt-4">
                 <motion.p variants={fadeIn("", "", 0.1, 1)}
                           className="mt-3 text-primary text-[17px] max-w-3xl leading-[30px] text-center justify-center">
-                    Here are some of the projects I have worked on. I have worked on a variety of web applications projects. I have experience with a variety of technologies and I am
-                    always looking to learn more.
+                    Quelques projets sur lesquels j'ai travaillé. J'ai travaillé sur une variété de projets d'applications web.
+                    J'ai de l'expérience avec une variété de technologies et je suis toujours à la recherche d'en apprendre davantage.
                 </motion.p>
             </div>
 

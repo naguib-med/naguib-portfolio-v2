@@ -6,96 +6,96 @@ import posterEditor from "../_components/images/poster_editor.png";
 import infoexpert from "../_components/images/company/infoexpert-logo.jpg";
 import hopital_peltier from "../_components/images/company/hopital_peltier.jpg";
 
-/* education logo */
+/* logo des établissements d'éducation */
 import univ_djibouti from "../_components/images/education/univ_djib.jpg";
 import univ_lyon1 from "../_components/images/education/univ_lyon1logo.png";
 
 const experiences = [
     {
-        title: "Vue.js Developer",
-        company: "Peltier Hospital",
-        type: "Internship",
-        date: "Jun. 2020 - Aug. 2020",
+        title: "Développeur Frontend Vue.js",
+        company: "Hôpital Peltier",
+        type: "Stage",
+        date: "Juin 2020 - Août 2020",
         description: [
-            "Participated in developing a patient management web application to optimize processes for nurse supervisors.",
-            "Collaborated in designing user interfaces and managing patient data.",
-            "Contributed to implementing key features and optimizing workflows."
+            "Participation au développement d'une application web de gestion des patients pour optimiser les processus des infirmiers majors.",
+            "Collaboration à la conception des interfaces utilisateurs et à la gestion des données des patients.",
+            "Contribution à la mise en place de fonctionnalités clés et à l'optimisation de l'expérience utilisateur."
         ],
-        languages: ["Vue.js", "Node.js", "SCSS", "Vuetify", "MySQL", "Git", "Agile Methodology"],
+        languages: ["Vue.js", "Node.js", "SCSS", "Vuetify", "MySQL", "Git", "Méthodologie Agile"],
         icon: hopital_peltier,
     },
     {
-        title: "Web Developer",
+        title: "Développeur Web",
         company: "Infoexpert",
-        type: "Fixed-term contract (CDD)",
-        date: "Nov. 2020 - Feb. 2021",
+        type: "Contrat à durée déterminée (CDD)",
+        date: "Nov. 2020 - Fév. 2021",
         description: [
-            "Worked on developing a library management web application.",
-            "Implemented a system to track loans and returns, with automatic notifications for users.",
-            "Implemented search and filter functionalities to facilitate user navigation."
+            "Développement d'une application web de gestion de bibliothèque.",
+            "Mise en place d'un système de suivi des prêts et retours avec notifications automatiques pour les utilisateurs.",
+            "Implémentation de fonctionnalités de recherche et de filtrage pour faciliter la navigation des utilisateurs."
         ],
-        languages: ["React.js", "Spring Boot", "MySQL", "Git", "Agile Methodology"],
+        languages: ["React.js", "Spring Boot", "MySQL", "Git", "Méthodologie Agile"],
         icon: infoexpert,
     },
     {
-        title: "Backend Java Developer",
+        title: "Développeur Backend Java",
         company: "Saba Africa Bank",
-        type: "Permanent contract (CDI)",
-        date: "Mar. 2021 - Aug. 2021",
+        type: "Contrat à durée indéterminée (CDI)",
+        date: "Mars 2021 - Août 2021",
         description: [
-            "Implemented a service for balance inquiry and transaction history display.",
-            "Developed an online bank check request feature."
+            "Implémentation d'un service de consultation de solde et d'affichage de l'historique des transactions.",
+            "Développement d'une fonctionnalité de demande de chèques en ligne."
         ],
-        languages: ["Java", "Spring Boot", "Spring Security", "Git", "Agile Methodology"],
+        languages: ["Java", "Spring Boot", "Spring Security", "Git", "Méthodologie Agile"],
         icon: saba_logo
     },
     {
-        title: "Full Stack Developer React/Node.js",
+        title: "Développeur Full Stack React/Node.js",
         company: "Bifora Data Consulting",
-        type: "Internship",
-        date: "Apr. 2023 - Aug. 2023",
+        type: "Stage",
+        date: "Avr. 2023 - Août 2023",
         description: [
-            "Developed a web application for Activity Reports (CRA) independently.",
-            "Participated in designing the architecture and developing the online training web application.",
-            "Project management: planning, monitoring, and reporting.",
-            "Wrote scripts and set up processes for migrating MongoDB databases."
+            "Développement d'une application web de Comptes-Rendus d'Activité (CRA) de manière autonome.",
+            "Participation à la conception de l'architecture et au développement de l'application web de formation en ligne.",
+            "Gestion de projet : planification, suivi et reporting.",
+            "Écriture de scripts et mise en place de processus pour la migration des bases de données MongoDB."
         ],
-        languages: ["React.js", "Node.js", "Spring Boot", "Spring Security", "PostgreSQL", "MongoDB", "Git", "Agile Methodology", "Docker", "Jira"],
+        languages: ["React.js", "Node.js", "Spring Boot", "Spring Security", "PostgreSQL", "MongoDB", "Git", "Méthodologie Agile", "Docker", "Jira"],
         icon: bifora
     },
     {
-        title: "Full Stack Developer React/Node.js",
+        title: "Développeur Full Stack React/Node.js",
         company: "Bifora Data Consulting",
-        type: "Work-study",
-        date: "Sep. 2023 - Aug. 2024",
+        type: "Alternance",
+        date: "Sep. 2023 - Août 2024",
         description: [
-            "Contributed to continuous improvement and maintenance of the company’s website.",
-            "Created unit and functional tests to ensure code quality.",
-            "Participated in migrating SAS programs to SparkR on the Databricks cloud."
+            "Contribution à l'amélioration continue et à la maintenance du site web de l'entreprise.",
+            "Création de tests unitaires et fonctionnels pour garantir la qualité du code.",
+            "Participation à la migration des programmes SAS vers SparkR sur le cloud Databricks."
         ],
-        languages: ["React.js", "Node.js", "MongoDB", "Git", "Agile Methodology", "Databricks", "SparkR", "SAS"],
+        languages: ["React.js", "Node.js", "MongoDB", "Git", "Méthodologie Agile", "Databricks", "SparkR", "SAS"],
         icon: bifora
     },
 ];
 
 const educations = [
     {
-        degree: "Bachelor of Science in Computer Science",
-        school: "University of Djibouti",
-        date: "Sep. 2017 - Jun. 2020",
+        degree: "Licence en Informatique",
+        school: "Université de Djibouti",
+        date: "Sep. 2017 - Juin 2020",
         description: [
-            "Relevant coursework: Data Structures, Algorithms, Web Development, Artificial Intelligence, Computer Networks ...",
-            "Valedictorian of the 2020 class of 101 students."
+            "Cours pertinents : Structures de données, Algorithmes, Développement web, Intelligence artificielle, Réseaux informatiques...",
+            "Major de promotion de la classe de 2020 composée de 101 étudiants."
         ],
         icon: univ_djibouti,
     },
     {
-        degree: "Master of Information and Web Technologies",
-        school: "University of Claude Bernard Lyon 1",
-        date: "Sep. 2022 - Jun. 2024",
+        degree: "Master en Technologies de l'Information et du Web",
+        school: "Université Claude Bernard Lyon 1",
+        date: "Sep. 2022 - Juin 2024",
         description: [
-            "Relevant coursework: Web Development, Web Security, Data Mining, Machine Learning, Big Data, Cloud Computing, Internet of Things ...",
-            "Received with distinction."
+            "Cours pertinents : Développement web, Sécurité web, Fouille de données, Apprentissage automatique, Big Data, Cloud Computing, Internet des objets...",
+            "Diplôme obtenu avec mention."
         ],
         icon: univ_lyon1,
     }
@@ -103,9 +103,9 @@ const educations = [
 
 const projects = [
     {
-        name: "Poster editor",
+        name: "Éditeur de posters",
         description:
-            "A web application for creating posters. Users can add text, images, shapes, and change the color of the text and shapes.",
+            "Une application web pour créer des posters. Les utilisateurs peuvent ajouter du texte, des images, des formes, et changer la couleur du texte et des formes.",
         tags: [
             {
                 name: "Vite + Vue",
@@ -131,7 +131,7 @@ const projects = [
     {
         name: "Cook Chef",
         description:
-            "A web-based recipe management application. Users can search for recipes, consult them, add them to their favorites and remove them from their favorites.",
+            "Une application web de gestion de recettes. Les utilisateurs peuvent rechercher des recettes, les consulter, les ajouter à leurs favoris et les retirer de leurs favoris.",
         tags: [
             {
                 name: "react",
@@ -155,9 +155,9 @@ const projects = [
         live_link: "https://cookchefapp.vercel.app/",
     },
     {
-        name: "Poster management",
+        name: "Gestion des posters",
         description:
-            "A web application for managing posters. Users can add, edit, delete, consult posters and generate a PDF file containing the list of posters.",
+            "Une application web pour gérer des posters. Les utilisateurs peuvent ajouter, modifier, supprimer, consulter des posters et générer un fichier PDF contenant la liste des posters.",
         tags: [
             {
                 name: "vue",

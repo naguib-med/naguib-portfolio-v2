@@ -50,9 +50,9 @@ export default function Tech() {
     return (
         <Section
             className="relative flex flex-col items-center py-20 bg-gradient-to-br from-[hsl(var(--background))] to-[hsl(var(--popover))] overflow-hidden">
-            <p className="text-primary font-caption">What I use everyday</p>
+            <p className="text-primary font-caption">Ce que j'utilise au quotidien</p>
             <h2 className="text-5xl font-bold font-caption text-primary">
-                Technologies I use.
+                Technologies que j'utilise
             </h2>
             <ParticleBackground/>
 
