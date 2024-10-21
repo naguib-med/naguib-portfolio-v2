@@ -32,6 +32,7 @@ body {
     --accent-foreground: 216 28% 82%;
     --destructive: 1 86% 57%;
     --destructive-foreground: 0 0% 100%;
+    --violet: 270, 100%, 50%;
     --ring: 210 17% 82%;
     --radius: 0.5rem;
   }

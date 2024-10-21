@@ -118,10 +118,11 @@ export default function Hero() {
                   className="text-lg md:text-xl mt-4 font-light leading-relaxed text-[hsl(var(--primary))]"
               >
   <span className="block mb-2 text-2xl md:text-3xl font-semibold text-[hsl(var(--primary))]">
-    🚀 Looking for a <span className="text-[hsl(var(--accent))] font-bold">full-stack developer role</span>
+    🚀 Looking for a <span className="text-[hsl(var(--violet))]">
+      full-stack developer role</span>
   </span>
-                  <span className="block text-base text-[hsl(var(--muted-foreground))]">
-    where I can <span className="font-medium text-[hsl(var(--primary))]">grow</span>, learn new technologies, and make a positive impact 🌍.
+                  <span className="block text-base text-[hsl(var(--primary))]">
+    where I can <span className="font-medium text-[hsl(var(--violet))]">grow</span>, learn new technologies, and make a positive impact 🌍.
   </span>
                   <span className="block mt-2 font-medium text-[hsl(var(--accent-foreground))]">
     Let’s build something amazing <span
