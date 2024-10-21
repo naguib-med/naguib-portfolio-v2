@@ -28,7 +28,7 @@ const experiences = [
         title: "Développeur Web",
         company: "Infoexpert",
         type: "Contrat à durée déterminée (CDD)",
-        date: "Nov. 2020 - Fév. 2021",
+        date: "Nov. 2020 - Jan. 2021",
         description: [
             "Développement d'une application web de gestion de bibliothèque.",
             "Mise en place d'un système de suivi des prêts et retours avec notifications automatiques pour les utilisateurs.",

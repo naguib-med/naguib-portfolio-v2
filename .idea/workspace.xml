@@ -5,13 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="210ecc4f-c241-41ed-b227-e8c48104c8b8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/_components/Contact.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/_components/Contact.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/_components/Education.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/_components/Education.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/_components/Experience.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/_components/Experience.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/_components/Hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/_components/Hero.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/_components/Tech.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/_components/Tech.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/_components/Works.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/_components/Works.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/constants/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/constants/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -93,7 +86,7 @@
       <workItem from="1728451969999" duration="5055000" />
       <workItem from="1728648278669" duration="1127000" />
       <workItem from="1729074580964" duration="46824000" />
-      <workItem from="1729499674675" duration="16407000" />
+      <workItem from="1729499674675" duration="16727000" />
     </task>
     <servers />
   </component>
