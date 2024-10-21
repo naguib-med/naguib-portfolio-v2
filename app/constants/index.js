@@ -40,7 +40,7 @@ const experiences = [
         type: "Permanent contract (CDI)",
         date: "Apr. 2021 - Aug. 2021",
         description: [
-            "Implémentation d'un service de consultation de soldes en temps réel pour les clients de la banque.",
+            "Implémentation d'un service de consultation de soldes et d'affichage de l'historique des transactions",
             "Développement d'une fonctionnalité de demande de chèque bancaire en ligne.",
         ],
         languages: ["Java", "Spring Boot", "Spring Security", "Git", "Agile Methodology"],
