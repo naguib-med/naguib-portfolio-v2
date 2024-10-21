@@ -85,7 +85,7 @@ const educations = [
         date: "Sep. 2017 - Jun. 2020",
         description: [
             "Relevant coursework: Data Structures, Algorithms, Web Development, Artificial Intelligence, Computer Networks ...",
-            "Valedictorian of the 2020 class of 101g students."
+            "Valedictorian of the 2020 class of 101 students."
         ],
         icon: univ_djibouti,
     },
