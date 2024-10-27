@@ -28,7 +28,7 @@ const experiences = [
         title: "Développeur Web",
         company: "Infoexpert",
         type: "Contrat à durée déterminée (CDD)",
-        date: "Nov. 2020 - Jan. 2021",
+        date: "Oct. 2020 - Jan. 2021",
         description: [
             "Développement d'une application web de gestion de bibliothèque.",
             "Mise en place d'un système de suivi des prêts et retours avec notifications automatiques pour les utilisateurs.",
@@ -50,10 +50,23 @@ const experiences = [
         icon: saba_logo
     },
     {
-        title: "Développeur Full Stack React/Node.js",
+        title: "Développeur Full Stack",
         company: "Bifora Data Consulting",
         type: "Stage",
         date: "Avr. 2023 - Août 2023",
+        description: [
+            "Contribution à l'amélioration continue et à la maintenance du site web de l'entreprise.",
+            "Création de tests unitaires et fonctionnels pour garantir la qualité du code.",
+            "Participation à la migration des programmes SAS vers SparkR sur le cloud Databricks."
+        ],
+        languages: ["React.js", "Node.js", "MongoDB", "Git", "Méthodologie Agile", "Databricks", "SparkR", "SAS"],
+        icon: bifora
+    },
+    {
+        title: "Développeur Full Stack",
+        company: "Bifora Data Consulting",
+        type: "Alternance",
+        date: "Sep. 2023 - Août 2024",
         description: [
             "Développement d'une application web de Comptes-Rendus d'Activité (CRA) de manière autonome.",
             "Participation à la conception de l'architecture et au développement de l'application web de formation en ligne.",
@@ -61,19 +74,6 @@ const experiences = [
             "Écriture de scripts et mise en place de processus pour la migration des bases de données MongoDB."
         ],
         languages: ["React.js", "Node.js", "Spring Boot", "Spring Security", "PostgreSQL", "MongoDB", "Git", "Méthodologie Agile", "Docker", "Jira"],
-        icon: bifora
-    },
-    {
-        title: "Développeur Full Stack React/Node.js",
-        company: "Bifora Data Consulting",
-        type: "Alternance",
-        date: "Sep. 2023 - Août 2024",
-        description: [
-            "Contribution à l'amélioration continue et à la maintenance du site web de l'entreprise.",
-            "Création de tests unitaires et fonctionnels pour garantir la qualité du code.",
-            "Participation à la migration des programmes SAS vers SparkR sur le cloud Databricks."
-        ],
-        languages: ["React.js", "Node.js", "MongoDB", "Git", "Méthodologie Agile", "Databricks", "SparkR", "SAS"],
         icon: bifora
     },
 ];
