@@ -5,6 +5,7 @@ import bifora from "../_components/images/company/bifora.jpg";
 import posterEditor from "../_components/images/poster_editor.png";
 import infoexpert from "../_components/images/company/infoexpert-logo.jpg";
 import hopital_peltier from "../_components/images/company/hopital_peltier.jpg";
+import planify_app from "../_components/images/planify_app.png";
 
 /* logo des établissements d'éducation */
 import univ_djibouti from "../_components/images/education/univ_djib.jpg";
@@ -102,6 +103,31 @@ const educations = [
 ];
 
 const projects = [
+    {
+        name: "Planify",
+        description: "Planify est une application web moderne de réservation de rendez-vous en ligne.",
+        tags: [
+            {
+                name: "Next.js",
+                color: "#ffffff",
+            },
+            {
+                name: "Tailwind CSS",
+                color: "#06B6D4",
+            },
+            {
+                name: "Prisma",
+                color: "#8eb4ff",
+            },
+            {
+                name: "PostgreSQL",
+                color: "#0f69e1",
+            },
+        ],
+        image: planify_app,
+        source_code_link: "https://github.com/naguib-med/planify",
+        live_link: "https://planify.vercel.app/",
+    },
     {
         name: "Éditeur de posters",
         description:
