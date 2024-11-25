@@ -74,7 +74,7 @@ const experiences = [
             "Gestion de projet : planification, suivi et reporting.",
             "Écriture de scripts et mise en place de processus pour la migration des bases de données MongoDB."
         ],
-        languages: ["React.js", "Node.js", "Spring Boot", "Spring Security", "PostgreSQL", "MongoDB", "Git", "Méthodologie Agile", "Docker", "Jira"],
+        languages: ["React.js", "TypeScript", "TailwindCSS", "Node.js", "Nest.js", "MongoDB", "Git", "Méthodologie Agile", "Docker", "Jira"],
         icon: bifora
     },
 ];

@@ -57,7 +57,7 @@ export default function Hero() {
                     transition={{ duration: 1.2 }}
                     className="text-3xl font-caption"
                 >
-                    Développeur fullstack React/Java
+                    Développeur fullstack (React, TypeScript, Node.js)
                 </motion.h3>
 
                 <motion.p
@@ -66,7 +66,7 @@ export default function Hero() {
                     transition={{ duration: 1.4 }}
                     className="text-base"
                 >
-                    Je suis un développeur fullstack junior React/Java basé en{" "}
+                    Je suis un développeur fullstack junior basé en{" "}
                     <Code className="inline-flex items-center">
                         <Image src={france} alt="Drapeau de la France" width={16} height={16} />
                         France
@@ -87,14 +87,14 @@ export default function Hero() {
                         Tailwind CSS
                     </Code>
                     , avec des technologies backend comme{" "}
-                    <Code className="inline-flex items-center hover:text-[hsl(var(--primary))]">
-                        <SpringIcon className="inline" size={16} />
-                        Spring Boot
-                    </Code>{" "}
-                    et{" "}
                     <Code className="inline-flex items-center my-1 hover:text-[hsl(var(--primary))]">
                         <NodeIcon className="inline" size={16} />
                         Node.js
+                    </Code>{" "}
+                    et{" "}
+                    <Code className="inline-flex items-center hover:text-[hsl(var(--primary))]">
+                        <SpringIcon className="inline" size={16} />
+                        Spring Boot
                     </Code>
                 </motion.p>
 
@@ -131,7 +131,7 @@ export default function Hero() {
           <span className="block mb-2 text-2xl md:text-3xl font-semibold text-[hsl(var(--primary))]">
             🚀 À la recherche d&apos;un{" "}
               <span className="text-[hsl(var(--violet))]">
-              poste de développeur full-stack
+              poste de développeur fullstack
             </span>
           </span>
                     <span className="block text-base text-[hsl(var(--primary))]">
