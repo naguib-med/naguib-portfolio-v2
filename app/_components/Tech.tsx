@@ -4,6 +4,7 @@ import { Section } from "./Section";
 import { TailwindIcon } from "./icons/TailwindIcon";
 import { ReactIcon } from "./icons/ReactIcon";
 import { TypeScriptIcon } from "./icons/TypeScriptIcon";
+import { JavaScriptIcon } from "./icons/JavaScriptIcon";
 import { NextJSIcon } from "./icons/NextJSIcon";
 import { motion } from "framer-motion";
 import styled from "@emotion/styled";
@@ -36,6 +37,7 @@ const skillVariants = {
 
 const skills = [
     { name: "React", icon: <ReactIcon className="inline" size={50} /> },
+    { name: "JavaScript", icon: <JavaScriptIcon className="inline" size={50} /> },
     { name: "TypeScript", icon: <TypeScriptIcon className="inline" size={50} /> },
     { name: "Tailwind CSS", icon: <TailwindIcon className="inline" size={50} /> },
     { name: "Node.js", icon: <NodeIcon className="inline" size={50} /> },

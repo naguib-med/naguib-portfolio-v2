@@ -9,6 +9,7 @@ import { TailwindIcon } from "./icons/TailwindIcon";
 import { ReactIcon } from "./icons/ReactIcon";
 import { TypeScriptIcon } from "./icons/TypeScriptIcon";
 import { NextJSIcon } from "./icons/NextJSIcon";
+import { PrismaIcon } from "./icons/PrismaIcon";
 import { GraphQLIcon } from "./icons/GraphQLIcon";
 import { motion } from "framer-motion";
 import { SpringIcon } from "@/app/_components/icons/SpringIcon";
@@ -66,7 +67,7 @@ export default function Hero() {
                     transition={{ duration: 1.4 }}
                     className="text-base"
                 >
-                    Je suis un développeur fullstack junior basé en{" "}
+                    Je suis un développeur fullstack basé en{" "}
                     <Code className="inline-flex items-center">
                         <Image src={france} alt="Drapeau de la France" width={16} height={16} />
                         France
@@ -119,7 +120,12 @@ export default function Hero() {
                         <GraphQLIcon className="inline" size={16} />
                         GraphQL
                     </Code>{" "}
-                    pour développer des applications plus complexes.
+                    et {" "}
+                    <Code className="inline-flex items-center hover:text-[hsl(var(--primary))] my-1">
+                        <PrismaIcon className="inline" size={16} />
+                        Prisma ORM
+                    </Code>{" "}
+                    pour améliorer mes compétences en développement web.
                 </motion.p>
 
                 <motion.p

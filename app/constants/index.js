@@ -6,6 +6,8 @@ import posterEditor from "../_components/images/poster_editor.png";
 import infoexpert from "../_components/images/company/infoexpert-logo.jpg";
 import hopital_peltier from "../_components/images/company/hopital_peltier.jpg";
 import planify_app from "../_components/images/planify_app.png";
+import code_snippet_image from "../_components/images/code_snippet_image.png";
+import pomodoro_image from "../_components/images/pomodoro_image.png";
 
 /* logo des établissements d'éducation */
 import univ_djibouti from "../_components/images/education/univ_djib.jpg";
@@ -13,42 +15,18 @@ import univ_lyon1 from "../_components/images/education/univ_lyon1logo.png";
 
 const experiences = [
     {
-        title: "Développeur Frontend Vue.js",
-        company: "Hôpital Peltier",
-        type: "Stage",
-        date: "Juin 2020 - Août 2020",
+        title: "Développeur Full Stack",
+        company: "Bifora Data Consulting",
+        type: "Alternance",
+        date: "Sep. 2023 - Août 2024",
         description: [
-            "Participation au développement d'une application web de gestion des patients pour optimiser les processus des infirmiers majors.",
-            "Collaboration à la conception des interfaces utilisateurs et à la gestion des données des patients.",
-            "Contribution à la mise en place de fonctionnalités clés et à l'optimisation de l'expérience utilisateur."
+            "Développement d'une application web de Comptes-Rendus d'Activité (CRA) de manière autonome.",
+            "Participation à la conception de l'architecture et au développement de l'application web de formation en ligne.",
+            "Gestion de projet : planification, suivi et reporting.",
+            "Écriture de scripts et mise en place de processus pour la migration des bases de données MongoDB."
         ],
-        languages: ["Vue.js", "Node.js", "SCSS", "Vuetify", "MySQL", "Git", "Méthodologie Agile"],
-        icon: hopital_peltier,
-    },
-    {
-        title: "Développeur Web",
-        company: "Infoexpert",
-        type: "Contrat à durée déterminée (CDD)",
-        date: "Oct. 2020 - Jan. 2021",
-        description: [
-            "Développement d'une application web de gestion de bibliothèque.",
-            "Mise en place d'un système de suivi des prêts et retours avec notifications automatiques pour les utilisateurs.",
-            "Implémentation de fonctionnalités de recherche et de filtrage pour faciliter la navigation des utilisateurs."
-        ],
-        languages: ["React.js", "Spring Boot", "MySQL", "Git", "Méthodologie Agile"],
-        icon: infoexpert,
-    },
-    {
-        title: "Développeur Backend Java",
-        company: "Saba Africa Bank",
-        type: "Contrat à durée indéterminée (CDI)",
-        date: "Mars 2021 - Août 2021",
-        description: [
-            "Implémentation d'un service de consultation de solde et d'affichage de l'historique des transactions.",
-            "Développement d'une fonctionnalité de demande de chèques en ligne."
-        ],
-        languages: ["Java", "Spring Boot", "Spring Security", "Git", "Méthodologie Agile"],
-        icon: saba_logo
+        languages: ["React.js", "TypeScript", "TailwindCSS", "Node.js", "Nest.js", "MongoDB", "Git", "Méthodologie Agile", "Docker", "Jira"],
+        icon: bifora
     },
     {
         title: "Développeur Full Stack",
@@ -64,32 +42,46 @@ const experiences = [
         icon: bifora
     },
     {
-        title: "Développeur Full Stack",
-        company: "Bifora Data Consulting",
-        type: "Alternance",
-        date: "Sep. 2023 - Août 2024",
+        title: "Développeur Backend Java",
+        company: "Saba Africa Bank",
+        type: "Contrat à durée indéterminée (CDI)",
+        date: "Mars 2021 - Août 2021",
         description: [
-            "Développement d'une application web de Comptes-Rendus d'Activité (CRA) de manière autonome.",
-            "Participation à la conception de l'architecture et au développement de l'application web de formation en ligne.",
-            "Gestion de projet : planification, suivi et reporting.",
-            "Écriture de scripts et mise en place de processus pour la migration des bases de données MongoDB."
+            "Implémentation d'un service de consultation de solde et d'affichage de l'historique des transactions.",
+            "Développement d'une fonctionnalité de demande de chèques en ligne."
         ],
-        languages: ["React.js", "TypeScript", "TailwindCSS", "Node.js", "Nest.js", "MongoDB", "Git", "Méthodologie Agile", "Docker", "Jira"],
-        icon: bifora
+        languages: ["Java", "Spring Boot", "Spring Security", "Git", "Méthodologie Agile"],
+        icon: saba_logo
+    },
+    {
+        title: "Développeur Web",
+        company: "Infoexpert",
+        type: "Contrat à durée déterminée (CDD)",
+        date: "Oct. 2020 - Jan. 2021",
+        description: [
+            "Développement d'une application web de gestion de bibliothèque.",
+            "Mise en place d'un système de suivi des prêts et retours avec notifications automatiques pour les utilisateurs.",
+            "Implémentation de fonctionnalités de recherche et de filtrage pour faciliter la navigation des utilisateurs."
+        ],
+        languages: ["React.js", "Spring Boot", "MySQL", "Git", "Méthodologie Agile"],
+        icon: infoexpert,
+    },
+    {
+        title: "Développeur Frontend Vue.js",
+        company: "Hôpital Peltier",
+        type: "Stage",
+        date: "Juin 2020 - Août 2020",
+        description: [
+            "Participation au développement d'une application web de gestion des patients pour optimiser les processus des infirmiers majors.",
+            "Collaboration à la conception des interfaces utilisateurs et à la gestion des données des patients.",
+            "Contribution à la mise en place de fonctionnalités clés et à l'optimisation de l'expérience utilisateur."
+        ],
+        languages: ["Vue.js", "Node.js", "SCSS", "Vuetify", "MySQL", "Git", "Méthodologie Agile"],
+        icon: hopital_peltier,
     },
 ];
 
 const educations = [
-    {
-        degree: "Licence en Informatique",
-        school: "Université de Djibouti",
-        date: "Sep. 2017 - Juin 2020",
-        description: [
-            "Cours pertinents : Structures de données, Algorithmes, Développement web, Intelligence artificielle, Réseaux informatiques...",
-            "Major de promotion de la classe de 2020 composée de 101 étudiants."
-        ],
-        icon: univ_djibouti,
-    },
     {
         degree: "Master en Technologies de l'Information et du Web",
         school: "Université Claude Bernard Lyon 1",
@@ -99,10 +91,71 @@ const educations = [
             "Diplôme obtenu avec mention."
         ],
         icon: univ_lyon1,
-    }
+    },
+    {
+        degree: "Licence en Informatique",
+        school: "Université de Djibouti",
+        date: "Sep. 2017 - Juin 2020",
+        description: [
+            "Cours pertinents : Structures de données, Algorithmes, Développement web, Intelligence artificielle, Réseaux informatiques...",
+            "Major de promotion parmi de 101 étudiants."
+        ],
+        icon: univ_djibouti,
+    },
 ];
 
 const projects = [
+    {
+        name: "Pomodoro Timer",
+        description: "Pomodoro Timer est une application web pour gérer le temps de travail et de pause.",
+        tags: [
+            {
+                name: "Next.js",
+                color: "#ffffff",
+            },
+            {
+                name: "Radix UI",
+                color: "#f25f4c",
+            },
+            {
+                name: "Tailwind CSS",
+                color: "#06B6D4",
+            },
+        ],
+        image: pomodoro_image,
+        source_code_link: "https://github.com/naguib-med/pomodoro",
+        live_link: "https://pomodoro-three-beryl.vercel.app/",
+    },
+    {
+        name: "Code Snippet",
+        description: "Code Snippet est une application web moderne pour stocker et partager des extraits de code.",
+        tags: [
+            {
+                name: "Next.js",
+                color: "#ffffff",
+            },
+            {
+                name: "Prisma",
+                color: "#8eb4ff",
+            },
+            {
+                name: "PostgreSQL",
+                color: "#0f69e1",
+            },
+            {
+                name: "Radix UI",
+                color: "#f25f4c",
+            },
+            {
+                name: "Tailwind CSS",
+                color: "#06B6D4",
+            },
+            ],
+        image: code_snippet_image,
+        source_code_link: "https://github.com/naguib-med/code-snippets",
+        live_link: "https://code-snippets-three-theta.vercel.app/",
+
+    },
     {
         name: "Planify",
         description: "Planify est une application web moderne de réservation de rendez-vous en ligne.",
