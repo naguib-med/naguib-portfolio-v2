@@ -14,19 +14,18 @@ export default function Home() {
     <main>
       {/* Header */}
       <Header />
-      <Spacing size="md" />
       <Hero />
       <Spacing size="md" />
-        <Experience />
-        <Spacing size="md"/>
-        <Education />
-        <Spacing size="md"/>
-        <Tech />
-        <Spacing size="md"/>
-        <Works />
-        <Spacing size="md"/>
-        <Contact />
-        <Spacing size="md"/>
+      <Experience />
+      <Spacing size="md" />
+      <Education />
+      <Spacing size="md" />
+      <Tech />
+      <Spacing size="md" />
+      <Works />
+      <Spacing size="md" />
+      <Contact />
+      <Spacing size="md" />
     </main>
   );
 }

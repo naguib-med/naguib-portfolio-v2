@@ -20,14 +20,15 @@ const EducationCard: React.FC<EducationCardProps> = ({ degree, school, date, des
         <VerticalTimelineElement
             visible
             contentStyle={{
-                background: "linear-gradient(135deg, rgba(29,24,54,0.8) 0%, rgba(60,59,77,0.8) 100%)",
-                color: "#fff",
+                background: "hsl(var(--accent) / 0.2)",
+                color: "hsl(var(--foreground))",
                 borderRadius: "12px",
                 boxShadow: "0 4px 14px rgba(0,0,0,0.2)",
+                border: "1px solid hsl(var(--accent))"
             }}
-            contentArrowStyle={{ borderRight: "7px solid rgba(255,255,255,0.8)" }}
+            contentArrowStyle={{ borderRight: "7px solid hsl(var(--accent))" }}
             date={date}
-            iconStyle={{ background: "#fff", color: "#fff", boxShadow: "0 4px 14px rgba(0,0,0,0.1)" }}
+            iconStyle={{ background: "hsl(var(--background))", color: "hsl(var(--foreground))", boxShadow: "0 4px 14px rgba(0,0,0,0.1)" }}
             icon={
                 <motion.div whileHover={{ scale: 1.1, rotate: 10 }}>
                     <Image
@@ -41,11 +42,11 @@ const EducationCard: React.FC<EducationCardProps> = ({ degree, school, date, des
                 </motion.div>
             }
         >
-            <h3 className="vertical-timeline-element-title text-xl font-bold">
+            <h3 className="vertical-timeline-element-title text-xl font-bold text-primary">
                 {degree}
             </h3>
-            <h4 className="vertical-timeline-element-subtitle text-lg">{school}</h4>
-            <div className="text-sm mt-3">
+            <h4 className="vertical-timeline-element-subtitle text-lg text-accent">{school}</h4>
+            <div className="text-sm mt-3 text-foreground">
                 <ul className="list-disc pl-5">
                     {description.map((desc, index) => (
                         <li key={index} className="mb-2">{desc}</li>
