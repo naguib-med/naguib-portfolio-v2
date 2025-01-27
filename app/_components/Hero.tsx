@@ -8,12 +8,12 @@ import { cn } from "@/lib/utils";
 import { TailwindIcon } from "./icons/TailwindIcon";
 import { ReactIcon } from "./icons/ReactIcon";
 import { TypeScriptIcon } from "./icons/TypeScriptIcon";
-import { NextJSIcon } from "./icons/NextJSIcon";
-import { PrismaIcon } from "./icons/PrismaIcon";
-import { GraphQLIcon } from "./icons/GraphQLIcon";
 import { motion } from "framer-motion";
 import { SpringIcon } from "@/app/_components/icons/SpringIcon";
 import { NodeIcon } from "@/app/_components/icons/NodeIcon";
+import { DockerIcon } from "@/app/_components/icons/DockerIcon";
+import { TerraformIcon } from "@/app/_components/icons/TerraformIcon";
+import { AwsIcon } from "@/app/_components/icons/AwsIcon";
 
 const Code = ({ className, ...props }: ComponentPropsWithoutRef<"code">) => {
     return (
@@ -58,7 +58,7 @@ export default function Hero() {
                     transition={{ duration: 1.2 }}
                     className="text-3xl font-caption"
                 >
-                    Développeur fullstack (React, TypeScript, Node.js)
+                    Développeur Fullstack orienté sécurité
                 </motion.h3>
 
                 <motion.p
@@ -72,7 +72,7 @@ export default function Hero() {
                         <Image src={france} alt="Drapeau de la France" width={16} height={16} />
                         France
                     </Code>
-                    . Je développe des applications web en utilisant{" "}
+                    . Je développe des applications web sécurisées en utilisant{" "}
                     <Code className="inline-flex items-center hover:text-[hsl(var(--primary))]">
                         <ReactIcon className="inline" size={16} />
                         React
@@ -106,51 +106,62 @@ export default function Hero() {
                     transition={{ duration: 1.6 }}
                     className="text-base"
                 >
-                    Je suis aussi un{" "}
+                    Actuellement, je me spécialise dans la{" "}
                     <Code className="hover:text-[hsl(var(--primary))]">
-                        autodidacte
+                        sécurité des applications
                     </Code>{" "}
-                    développeur. Actuellement en apprentissage de{" "}
+                    et j&apos;explore des outils comme{" "}
                     <Code className="inline-flex items-center hover:text-[hsl(var(--primary))]">
-                        <NextJSIcon className="inline" size={16} />
-                        Next.js
+                        <DockerIcon className="inline" size={16} />
+                        Docker
                     </Code>{" "}
                     et{" "}
                     <Code className="inline-flex items-center hover:text-[hsl(var(--primary))]">
-                        <GraphQLIcon className="inline" size={16} />
-                        GraphQL
+                        <TerraformIcon className="inline" size={16} />
+                        Terraform
                     </Code>{" "}
-                    et {" "}
-                    <Code className="inline-flex items-center hover:text-[hsl(var(--primary))] my-1">
-                        <PrismaIcon className="inline" size={16} />
-                        Prisma ORM
+                    et{" "}
+                    <Code className="inline-flex items-center hover:text-[hsl(var(--primary))]">
+                        <AwsIcon className="inline" size={16} />
+                        AWS
                     </Code>{" "}
-                    pour améliorer mes compétences en développement web.
+                    pour améliorer mes compétences en{" "}
+                    <Code className="hover:text-[hsl(var(--primary))]">
+                        DevSecOps
+                    </Code>.
                 </motion.p>
 
+                <motion.p
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1.7 }}
+                    className="text-base"
+                >
+                    Je m&apos;intéresse également aux outils de sécurité
+                </motion.p>
                 <motion.p
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1.8 }}
                     className="text-lg md:text-xl mt-2 font-light leading-relaxed text-[hsl(var(--primary))]"
                 >
-          <span className="block mb-2 text-2xl md:text-3xl font-semibold text-[hsl(var(--primary))]">
-            🚀 À la recherche d&apos;un{" "}
-              <span className="text-[hsl(var(--violet))]">
-              poste de développeur fullstack
-            </span>
-          </span>
+                    <span className="block mb-2 text-2xl md:text-3xl font-semibold text-[hsl(var(--primary))]">
+                        🚀 À la recherche d&apos;un{" "}
+                        <span className="text-[hsl(var(--violet))]">
+                            poste de développeur fullstack
+                        </span>
+                    </span>
                     <span className="block text-base text-[hsl(var(--primary))]">
-            où je peux{" "}
+                        où je peux{" "}
                         <span className="font-medium text-[hsl(var(--violet))]">évoluer</span>, apprendre de nouvelles technologies et avoir un impact positif 🌍.
-          </span>
+                    </span>
                     <span className="block mt-2 font-medium text-[hsl(var(--accent-foreground))]">
-            Construisons quelque chose d&apos;incroyable{" "}
+                        Construisons quelque chose d&apos;incroyable{" "}
                         <span className="underline hover:text-[hsl(var(--primary))] transition-colors">
-              ensemble !
-            </span>{" "}
+                            ensemble !
+                        </span>{" "}
                         💡
-          </span>
+                    </span>
                 </motion.p>
 
                 <motion.div
@@ -160,7 +171,7 @@ export default function Hero() {
                     className="mt-4"
                 >
                     <a
-                        href="/Naguib_CV.pdf"
+                        href="/CV_Naguib.pdf"
                         download
                         className="inline-flex items-center px-6 py-3 border border-transparent bg-[hsl(var(--primary))] text-[hsl(var(--primary-foreground))] font-bold rounded-lg hover:bg-[hsl(var(--accent))] hover:text-[hsl(var(--accent-foreground))] transition-all duration-300"
                     >
@@ -185,6 +196,6 @@ export default function Hero() {
                     priority
                 />
             </motion.div>
-        </Section>
+        </Section >
     );
 }

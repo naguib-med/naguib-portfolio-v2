@@ -27,11 +27,11 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ title, company, type, d
                 borderRadius: "12px",
                 boxShadow: "0 4px 14px rgba(0,0,0,0.2)",
             }}
-            contentArrowStyle={{borderRight: "7px solid rgba(255,255,255,0.8)"}}
+            contentArrowStyle={{ borderRight: "7px solid rgba(255,255,255,0.8)" }}
             date={date}
-            iconStyle={{background: "#fff", color: "#fff", boxShadow: "0 4px 14px rgba(0,0,0,0.1)"}}
+            iconStyle={{ background: "#fff", color: "#fff", boxShadow: "0 4px 14px rgba(0,0,0,0.1)" }}
             icon={
-                <motion.div whileHover={{scale: 1.1, rotate: 10}}>
+                <motion.div whileHover={{ scale: 1.1, rotate: 10 }}>
                     <Image
                         width={100}
                         height={100}
@@ -61,7 +61,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ title, company, type, d
                         {languages.map((language, index) => (
                             <span
                                 key={index}
-                                className="px-2 py-1 rounded-md text-sm mr-2 bg-primary-foreground"
+                                className="px-2 py-1 rounded-xl text-sm mr-2 bg-primary-foreground bg-opacity-10"
                             >
                                 {language}
                             </span>

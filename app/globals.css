@@ -32,8 +32,12 @@ body {
     --accent-foreground: 216 28% 82%;
     --destructive: 1 86% 57%;
     --destructive-foreground: 0 0% 100%;
-    --violet: 270, 100%, 50%;
     --ring: 210 17% 82%;
+    --chart-1: 210 17% 82%;
+    --chart-2: 210 7% 25%;
+    --chart-3: 216 28% 22%;
+    --chart-4: 210 7% 28%;
+    --chart-5: 210 20% 82%;
     --radius: 0.5rem;
   }
 }

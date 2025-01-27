@@ -1,11 +1,11 @@
 "use client";
 import { motion } from "framer-motion";
 import { Section } from "./Section";
-import {fadeIn} from "@/app/helpers/motion";
-import {projects} from "@/app/constants";
-import {Tilt} from "react-tilt";
+import { fadeIn } from "@/app/helpers/motion";
+import { projects } from "@/app/constants";
+import { Tilt } from "react-tilt";
 import Image, { StaticImageData } from "next/image";
-import {GithubIcon} from "@/app/_components/icons/GithubIcon";
+import { GithubIcon } from "@/app/_components/icons/GithubIcon";
 import { Globe } from "lucide-react";
 import React from "react";
 
@@ -55,8 +55,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ index, name, description, tag
                     <div className="flex flex-wrap mt-5">
                         {tags.map((tag, index) => (
                             <span key={index}
-                                  className="px-2 py-1 rounded-md text-sm mr-2"
-                                  style={{ color: tag.color}}
+                                className="px-2 py-1 rounded-md text-sm mr-2"
+                                style={{ color: tag.color }}
                             >
                                 #{tag.name}
                             </span>
@@ -103,7 +103,7 @@ export default function Works() {
             </h2>
             <div className="w-full flex flex-col items-center justify-center mt-4">
                 <motion.p variants={fadeIn("", "", 0.1, 1)}
-                          className="mt-3 text-primary text-[17px] max-w-3xl leading-[30px] text-center justify-center">
+                    className="mt-3 text-primary text-[17px] max-w-3xl leading-[30px] text-center justify-center">
                     Quelques projets sur lesquels j&apos;ai travaillé. J&apos;ai travaillé sur une variété de projets d&apos;applications web.
                     J&apos;ai de l&apos;expérience avec une variété de technologies et je suis toujours à la recherche d&apos;en apprendre davantage.
                 </motion.p>
