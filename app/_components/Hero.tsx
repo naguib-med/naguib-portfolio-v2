@@ -34,7 +34,6 @@ const Code = ({ className, ...props }: ComponentPropsWithoutRef<"code">) => {
 export default function Hero() {
     const { scrollY } = useScroll();
     const profileScale = useTransform(scrollY, [0, 300], [1, 0.8]);
-    const profileOpacity = useTransform(scrollY, [0, 300], [1, 0]);
 
     return (
         <Section className="relative flex max-md:flex-col items-start gap-12 md:flex-row md:items-center min-h-screen py-20">
@@ -145,7 +144,7 @@ export default function Hero() {
 
             {/* Profile Image */}
             <motion.div
-                style={{ scale: profileScale, opacity: profileOpacity }}
+                style={{ scale: profileScale }}
                 className="flex-1 relative z-10"
             >
                 <motion.div
