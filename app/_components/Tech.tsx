@@ -1,7 +1,7 @@
 "use client";
 
-import React, { useState } from 'react';
-import { motion } from 'framer-motion';
+import React, { useState } from "react";
+import { motion } from "framer-motion";
 import { Section } from "./Section";
 import { TailwindIcon } from "./icons/TailwindIcon";
 import { ReactIcon } from "./icons/ReactIcon";
