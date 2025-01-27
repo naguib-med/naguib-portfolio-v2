@@ -28,7 +28,7 @@ const skills = [
 ];
 
 export default function Tech() {
-    const [selectedSkill, setSelectedSkill] = useState(null);
+    const [selectedSkill, setSelectedSkill] = useState<number | null>(null);
 
     return (
         <Section className="relative min-h-screen py-20">
