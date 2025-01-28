@@ -7,29 +7,94 @@ import naguib from "./images/naguib.jpg";
 import france from "./images/flag_of_france.png";
 import { cn } from "@/lib/utils";
 import { motion, useScroll, useTransform, HTMLMotionProps } from "framer-motion";
-import { TailwindIcon } from "./icons/TailwindIcon";
-import { ReactIcon } from "./icons/ReactIcon";
-import { TypeScriptIcon } from "./icons/TypeScriptIcon";
-import { SpringIcon } from "@/app/_components/icons/SpringIcon";
+import { ReactIcon } from "@/app/_components/icons/ReactIcon";
+import { TypeScriptIcon } from "@/app/_components/icons/TypeScriptIcon";
+import { TailwindIcon } from "@/app/_components/icons/TailwindIcon";
 import { NodeIcon } from "@/app/_components/icons/NodeIcon";
+import { SpringIcon } from "@/app/_components/icons/SpringIcon";
 import { DockerIcon } from "@/app/_components/icons/DockerIcon";
 import { TerraformIcon } from "@/app/_components/icons/TerraformIcon";
 import { AwsIcon } from "@/app/_components/icons/AwsIcon";
 
 
-const Code = ({ className, ...props }: ComponentPropsWithoutRef<"code">) => {
+const ANIMATION_DURATION = 0.8;
+const ANIMATION_DELAYS = {
+    TITLE: 0,
+    DESCRIPTION: 0.2,
+    TECH_STACK: 0.3,
+    JOB_SEARCH: 0.4,
+    CV_BUTTON: 0.6
+};
+
+interface CodeProps extends ComponentPropsWithoutRef<"code"> {
+    icon?: React.ReactNode;
+    text: string;
+}
+
+const Code = ({ icon, text, className, ...props }: CodeProps) => {
     return (
         <motion.code
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className={cn(
-                "bg-accent/20 font-mono border group hover:bg-accent/40 transition-all duration-300 border-accent px-2 py-[0.3rem] rounded-xl text-primary inline-flex items-center gap-2 hover:shadow-lg hover:shadow-accent/20",
+                "bg-accent/20 font-mono border group hover:bg-accent/40 transition-all duration-300",
+                "border-accent px-2 py-[0.3rem] rounded-xl text-primary",
+                "inline-flex items-center gap-2 hover:shadow-lg hover:shadow-accent/20",
                 className
             )}
-            {...props as HTMLMotionProps<"code">} // Cast des props pour correspondre au type attendu
-        />
+            {...props as HTMLMotionProps<"code">}
+        >
+            {icon}
+            {text}
+        </motion.code>
     );
 };
+
+const TechStack = () => (
+    <div className="space-y-2 text-base">
+        <p>
+            Je suis un Ingénieur fullstack basé en{" "}
+            <Code
+                icon={<Image src={france} alt="Drapeau de la France" width={24} height={24} className="group-hover:rotate-12 transition-transform" />}
+                text="France"
+            />
+        </p>
+
+        <p className="flex flex-wrap gap-2 items-center">
+            Je développe des applications web sécurisées en utilisant
+            {[
+                { Icon: ReactIcon, text: "React", hoverAnimation: "rotate-180" },
+                { Icon: TypeScriptIcon, text: "TypeScript", hoverAnimation: "scale-110" },
+                { Icon: TailwindIcon, text: "Tailwind CSS", hoverAnimation: "rotate-12" },
+                { Icon: NodeIcon, text: "Node.js", hoverAnimation: "-rotate-12" },
+                { Icon: SpringIcon, text: "Spring Boot", hoverAnimation: "scale-110" }
+            ].map(({ Icon, text, hoverAnimation }) => (
+                <Code
+                    key={text}
+                    icon={<Icon className={`inline group-hover:${hoverAnimation} transition-transform duration-500`} size={24} />}
+                    text={text}
+                />
+            ))}
+        </p>
+
+        <p className="flex flex-wrap gap-2 items-center">
+            Actuellement, je me spécialise dans la{" "}
+            <Code text="sécurité des applications" /> et je me forme en
+            {[
+                { Icon: DockerIcon, text: "Docker", hoverAnimation: "translate-x-1" },
+                { Icon: TerraformIcon, text: "Terraform", hoverAnimation: "rotate-45" },
+                { Icon: AwsIcon, text: "AWS", hoverAnimation: "scale-110" }
+            ].map(({ Icon, text, hoverAnimation }) => (
+                <Code
+                    key={text}
+                    icon={<Icon className={`inline group-hover:${hoverAnimation} transition-transform`} size={24} />}
+                    text={text}
+                />
+            ))} et d&apos;autres technologies
+            pour améliorer mes compétences en <Code text="DevSecOps" />
+        </p>
+    </div>
+);
 
 export default function Hero() {
     const { scrollY } = useScroll();
@@ -42,84 +107,36 @@ export default function Hero() {
                 <motion.div
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8 }}
+                    transition={{ duration: ANIMATION_DURATION }}
                     className="space-y-4"
                 >
                     <h1 className="text-5xl font-bold font-caption bg-clip-text text-transparent bg-gradient-to-r from-primary via-secondary to-accent">
                         Hey, je suis Naguib.
                     </h1>
                     <h2 className="text-2xl font-caption text-foreground/90">
-                        Développeur Fullstack orienté sécurité
+                        Ingénieur Fullstack orienté sécurité
                     </h2>
                 </motion.div>
 
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8, delay: 0.2 }}
-                    className="space-y-2 text-base"
+                    transition={{ duration: ANIMATION_DURATION, delay: ANIMATION_DELAYS.TECH_STACK }}
                 >
-                    <p>
-                        Je suis un développeur fullstack basé en{" "}
-                        <Code>
-                            <Image src={france} alt="Drapeau de la France" width={24} height={24} className="group-hover:rotate-12 transition-transform" />
-                            France
-                        </Code>
-                    </p>
-
-                    <p className="flex flex-wrap gap-2 items-center">
-                        Je développe des applications web sécurisées en utilisant
-                        <Code>
-                            <ReactIcon className="inline group-hover:rotate-180 transition-transform duration-500" size={24} />
-                            React
-                        </Code>
-                        <Code>
-                            <TypeScriptIcon className="inline group-hover:scale-110 transition-transform" size={24} />
-                            TypeScript
-                        </Code>
-                        <Code>
-                            <TailwindIcon className="inline group-hover:rotate-12 transition-transform" size={24} />
-                            Tailwind CSS
-                        </Code>
-                        <Code>
-                            <NodeIcon className="inline group-hover:-rotate-12 transition-transform" size={24} />
-                            Node.js
-                        </Code>
-                        <Code>
-                            <SpringIcon className="inline group-hover:scale-110 transition-transform" size={24} />
-                            Spring Boot
-                        </Code>
-                    </p>
-
-                    <p className="flex flex-wrap gap-2 items-center">
-                        Actuellement, je me spécialise dans la{" "}
-                        <Code>sécurité des applications</Code> et j&apos;explore
-                        <Code>
-                            <DockerIcon className="inline group-hover:translate-x-1 transition-transform" size={24} />
-                            Docker
-                        </Code>
-                        <Code>
-                            <TerraformIcon className="inline group-hover:rotate-45 transition-transform" size={24} />
-                            Terraform
-                        </Code>
-                        <Code>
-                            <AwsIcon className="inline group-hover:scale-110 transition-transform" size={24} />
-                            AWS
-                        </Code>
-                        pour améliorer mes compétences en <Code>DevSecOps</Code>
-                    </p>
+                    <TechStack />
                 </motion.div>
 
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8, delay: 0.4 }}
+                    transition={{ duration: ANIMATION_DURATION, delay: ANIMATION_DELAYS.JOB_SEARCH }}
                     className="mt-4 p-6 rounded-2xl border border-accent/20 bg-gradient-to-br from-accent/10 to-transparent backdrop-blur-sm"
                 >
                     <p className="text-xl font-bold flex items-center gap-3">
                         <span className="animate-bounce">🚀</span>
-                        <span>À la recherche d&apos;un{" "}
-                            <span className="text-primary">poste de développeur fullstack</span>
+                        <span>
+                            À la recherche d&apos;un{" "}
+                            <span className="text-primary">poste d&apos;ingénieur fullstack</span>
                         </span>
                     </p>
                 </motion.div>
@@ -127,7 +144,7 @@ export default function Hero() {
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8, delay: 0.6 }}
+                    transition={{ duration: ANIMATION_DURATION, delay: ANIMATION_DELAYS.CV_BUTTON }}
                     className="mt-2"
                 >
                     <motion.a
