@@ -15,6 +15,27 @@ interface EducationCardProps {
     icon: string | StaticImageData;
 }
 
+
+interface DescriptionFormatterProps {
+    text: string;
+}
+
+const DescriptionFormatter: React.FC<DescriptionFormatterProps> = ({ text }) => {
+    const match = text.match(/\*(.*?)\*:\s*(.*)/);
+
+    if (!match) return <span>{text}</span>;
+
+    const [, title, content] = match;
+
+    return (
+        <span>
+            <strong className="font-bold text-primary">{title}:</strong>{" "}
+            {content}
+        </span>
+    );
+};
+
+
 const EducationCard: React.FC<EducationCardProps> = ({ degree, school, date, description, icon }) => {
     return (
         <VerticalTimelineElement
@@ -49,7 +70,9 @@ const EducationCard: React.FC<EducationCardProps> = ({ degree, school, date, des
             <div className="text-sm mt-3 text-foreground">
                 <ul className="list-disc pl-5">
                     {description.map((desc, index) => (
-                        <li key={index} className="mb-2">{desc}</li>
+                        <li key={index} className="mb-2">
+                            <DescriptionFormatter text={desc} />
+                        </li>
                     ))}
                 </ul>
             </div>
