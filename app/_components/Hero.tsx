@@ -148,7 +148,7 @@ export default function Hero() {
                     className="mt-2"
                 >
                     <motion.a
-                        href="/cv_ingenieur_fullstack_naguib.pdf"
+                        href="/cv_naguib.pdf"
                         download
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
